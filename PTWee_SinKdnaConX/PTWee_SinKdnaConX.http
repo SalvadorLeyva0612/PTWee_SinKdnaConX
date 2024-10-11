@@ -1,0 +1,6 @@
+@PTWee_SinKdnaConX_HostAddress = http://localhost:5182
+
+GET {{PTWee_SinKdnaConX_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

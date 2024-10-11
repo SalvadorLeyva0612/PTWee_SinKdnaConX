@@ -1,0 +1,42 @@
+﻿@model ClientRegisteros.Models.RegisterModel
+
+<div class=" card text-primary">
+    <div class="card-header text-center">
+        <h5>Crear Producto</h5>
+    </div>
+    <div class=" card-body text-center">
+        <div class=" col-md-12">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label></label>
+                    <input asp-for="Nom_Company" class="form-control" placeholder="Nombre de Empresa">
+                    <span asp-validation-for="Nom_Company" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <input asp-for="Nom_Contact" class="form-control" placeholder="Nombre de Contacto">
+                    <span asp-validation-for="Nom_Contact" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <input asp-for="Email" class="form-control" placeholder="Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <input asp-for="Num_Tel" class="form-control" placeholder="Numero de Telefono">
+                    <span asp-validation-for="Num_Tel" class="text-danger"></span>
+                </div>
+                <div class=" card-footer text-center">
+                    <div class="form-group">
+                        <input type="submit" value="Guardar" class="btn btn-outline-primary btn-sm" />
+                        <a asp-action="Formulario" class="btn btn-outline-success btn-sm">Volver a la Lista</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
